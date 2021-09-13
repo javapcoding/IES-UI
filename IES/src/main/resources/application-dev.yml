@@ -58,9 +58,9 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         
   datasource:
-    url: jdbc:postgresql://localhost:5432/IES
-    username: postgres
-    password: admin
+    url: postgres://tjkhmahifxorcr:3b584f1e7a8c4b9633d469eb206bcbaf3f652a0f9b6568be6edc3206b3f6f34e@ec2-34-196-238-94.compute-1.amazonaws.com:5432/d7565o2fmg4koe
+    username: tjkhmahifxorcr
+    password: 3b584f1e7a8c4b9633d469eb206bcbaf3f652a0f9b6568be6edc3206b3f6f34e
     driver-class-name: org.postgresql.Driver 
 #sending mail
   mail:
