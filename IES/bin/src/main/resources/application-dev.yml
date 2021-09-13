@@ -49,17 +49,19 @@ server:
 spring:
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
     properties:
       hibernate:
+      
         show_sql: true
         format_sql: true
-        dialect: org.hibernate.dialect.OracleDialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        
   datasource:
-    url: jdbc:oracle:thin:@localhost:1521:XE
-    username: SYSTEM
-    password: RAVI
-    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:postgresql://localhost:5432/IES
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver 
 #sending mail
   mail:
     host: smtp.gmail.com
